@@ -1,0 +1,7 @@
+{
+  "name": "satyveer",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

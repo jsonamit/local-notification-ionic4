@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar class="header-color">
+    <ion-buttons slot="start">
+      <ion-menu-button class="header-title-color"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="header-title-color">
+      Home
+    </ion-title>
+    <ion-buttons routerLink="/home" slot="end">
+      <!-- <ion-menu-button style="color: aliceblue;"></ion-menu-button>     -->
+      <ion-icon style="width:45px;color: white;height: 27px;" name="home"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row style="margin-top: 10px;">
+      <ion-col size="3">Name</ion-col>
+      <ion-col size="2">:</ion-col>
+      <ion-col>Amit</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">Address</ion-col>
+      <ion-col size="2">:</ion-col>
+      <ion-col>Sre</ion-col>
+    </ion-row>
+  </ion-grid>
+  <div>
+    <ion-button (click)="payWithPayUMoney()" style="margin-top: 90px;" class="btnSubmit" expand="block"><b>Payment</b>
+    </ion-button>
+  </div>
+
+  <div>
+    <ion-button (click)="openSetting()" style="margin-top: 90px;" class="btnSubmit" expand="block"><b>Setting</b>
+    </ion-button>
+  </div>
+</ion-content>

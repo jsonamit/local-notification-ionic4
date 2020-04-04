@@ -1,0 +1,16 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+ion-content {
+  --overflow: hidden;
+}
+
+// ion-content {
+//   --background: none;
+//   background-image: url('../../assets/satyveer-home222.jpg');
+//   background-position: center top;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }

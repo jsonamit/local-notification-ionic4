@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar class="header-color">
+    <ion-buttons slot="start">
+      <ion-menu-button class="header-title-color"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="header-title-color">
+      Information
+    </ion-title>
+    <ion-buttons routerLink="/home" slot="end">
+      <!-- <ion-menu-button style="color: aliceblue;"></ion-menu-button>     -->
+      <ion-icon style="width:45px;color: white;height: 27px;" name="home"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <h3>
+    <p class="header-color" (click)="getSchedule()" style="text-align:center;margin-top: 10px;">
+      <ion-button color="success" expand="full">Schedule</ion-button>
+    </p>
+  </h3>
+  <h3>
+    <p class="header-color" (click)="getSecond()" style="text-align:center;margin-top: 10px;">
+      <ion-button color="success" expand="full">Every Second</ion-button>
+    </p>
+  </h3>
+  <h3>
+    <p class="header-color" (click)="getDaily()" style="text-align:center;margin-top: 10px;">
+      <ion-button color="success" expand="full">Daily</ion-button>
+    </p>
+  </h3>
+  <h3>
+    <p class="header-color" (click)="getAll()" style="text-align:center;margin-top: 10px;">
+      <ion-button color="success" expand="full">Get All</ion-button>
+    </p>
+  </h3>
+  <h3 *ngFor="let d of Data">
+    <p class="header-color" style="text-align:center;margin-top: 10px;">
+       {{Data.id}} - {{Data.title}}
+    </p>
+  </h3>
+  <!-- <h3>
+    <p class="header-color" style="text-align:center;"><b style="color: darkblue;">Live Location</b></p>
+  </h3>
+
+
+  <h3>
+    <p class="header-color" (click)="getData()" style="text-align:center;margin-top: 10px;"><ion-button color="success" expand="full" >Click</ion-button>></p>
+  </h3>
+
+  <h3>
+    <p class="header-color" style="text-align:center;margin-top: 5px;"><b style="color: black;">{{data}}</b></p>
+  </h3> -->
+
+
+</ion-content>
